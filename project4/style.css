@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    position: relative;
+}
+
+
+img{
+    display: block;
+    width: 100%;
+}
+.hero{
+    width: 100%;
+    background: url(img/background_hero.jpg);
+    background-size: cover;
+    padding: 110px 40px 60px 40px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+.navbar-nav{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.navbar{
+    height:42px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #ccc;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ccc;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.bg-grey{
+    background-color:#dedede;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #e41a3c;
+    border: 2px solid #e41a3c;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #e41a3c;
+    color: #e41a3c;
+}
+.box{
+    padding:40px 40px;
+}
+.content .title{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    background-color: #ccc;
+    /* z-index: 100; */
+    font-weight: bold;
+    padding: 7px;
+    color: white;
+    font-size: 17px;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #1048e6;
+}
+.content p{
+    width: 55%;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 8px 15px;
+    font-weight: 600;
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color:#dedede;
+}
+
+#section5 {
+    padding: 20px 0;
+    background-color: #dedede;
+  }
+  
+  #section5  a {
+    color: #333;
+  }
+  
+  #section5  .social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  #section5  .social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+  }
+  /*
+      Multicoloured Hover Variations
+  */
+  
+  #section5  #social-fb:hover {
+    color: #3B5998;
+  }
+  
+  #section5  #social-tw:hover {
+    color: #4099FF;
+  }
+  
+  #section5  #social-gp:hover {
+    color: #d34836;
+  }
+  
+  #section5  #social-em:hover {
+    color: #f39c12;
+  }
+  .projects p{
+    color:black;
+  }
+  .projects .type{
+    background-color: #e41a3c;
+    color: white;
+    font-size: 10px;
+    margin-bottom: 0;
+    display: inline-block;
+    padding: 2px 4px;
+    margin-bottom: 7px;
+  }
+  .projects .link{
+    padding: 3px 0px;
+  }
+  .projects .link a{
+    color:#1048e6;
+  }
+  .projects .content-wrap{
+    min-height:220px;
+  }
+@media screen and (max-width:991px) {
+    .navbar-nav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    nav ul li .nav-link{
+        font-size:14px;
+    }
+    nav ul li{
+        padding:10px 5px;
+    }
+    .content p{
+        width:100%;
+    }
+    #section1 h1{
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .navbar{
+        height:50px;
+    }
+    .navbar li{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px){
+    .projects .col-md-3{
+        width: 50% !important;
+    }
+}
